@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Components\Menu\UIButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\Components\Menu\UIButton.Designer.cs">
+      <DependentUpon>UIButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class\Controller\ControllerAbstract.cs" />
     <Compile Include="Class\IOEngine.cs" />
     <Compile Include="Class\Model\ModelAbstract.cs" />
@@ -57,6 +63,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Game\View\Menu\Main.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -85,7 +92,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Game\" />
+    <Folder Include="Game\Controller\Menu\" />
+    <Folder Include="Game\Model\" />
+    <Folder Include="Game\Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
